@@ -7,16 +7,38 @@ body {
 }
 
 header {
-  position: fixed;
   padding: 10px 0px;
   height: 40px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   width: 100%;
+  background: #2c3e50;
+  color: white;
 
   #name {
     float: right;
-    margin: 0px 10px;
+    margin: 0px 20px;
     font-size: 2em;
   }
 
+}
+
+main {
+  width: 100%;
+  display: table;
+  margin-top: 30px;
+
+  .image  {
+    float: left;
+    height: 200px;
+    width: 23%;
+    margin: 20px 5%;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+  }
+
+  .image:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
 }
