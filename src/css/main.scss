@@ -29,6 +29,11 @@ header {
       width: 40px;
       height: 40px;
       cursor: pointer;
+      transition: opacity 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    img:hover {
+      opacity: 0.7;
     }
   }
 
