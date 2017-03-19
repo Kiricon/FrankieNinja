@@ -36,6 +36,7 @@ gulp.task('convertcss', function(){
           .pipe(cache('csscache'))
           .pipe(cleanCSS({compatibility: 'ie8'}))
           .pipe(gulp.dest('./dist'))
+          .pipe(gulp.dest('./src'))
           .pipe(browserSync.stream())
 });
 
@@ -57,4 +58,4 @@ gulp.task('watch', function(){
   
 });
 
-gulp.task('run', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'watch']);
